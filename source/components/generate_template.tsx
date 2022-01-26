@@ -4,11 +4,12 @@ import { brandColor, Framework } from "../config";
 import { getTemplatePath as getTemplate } from "./utils";
 import { fetchRepo } from "../fetch_repo";
 
-export const GenerateFrameWork: FC<{ template: Framework }> = ({
+export const GenerateFrameWork: FC<{ template: Framework; projectPath: string }> = ({
 	template,
+	projectPath,
 }) => {
 	const [templateName, templatePath] = getTemplate(template);
-	fetchRepo(templatePath)
+	fetchRepo(templatePath, projectPath);
 
 	return (
 		<>

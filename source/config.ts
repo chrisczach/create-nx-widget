@@ -9,9 +9,10 @@ export enum Framework {
 }
 export const templates: Record<Framework, string> = {
     vue: 'Vue',
-    vanilla: 'vanilla javascript',
+    vanilla: 'Vanilla JavaScript',
     react: 'React',
     svelte: 'Svelte'
 }
+
 export const availableTemplates = Object.keys(templates).join(' | ')
 export const frameworkSelect = Object.entries(templates).map(([value, label]) => ({ value, label }))

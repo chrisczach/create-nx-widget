@@ -1,17 +1,17 @@
 import degit from 'degit'
 
 const defaultOptions = {
-	cache: true,
-	force: true,
-	verbose: true,
+    cache: true,
+    force: true,
+    verbose: true,
 }
 
-export const fetchRepo = (path: string, options = defaultOptions) => {
-    const emitter = degit(path, options)
+export const fetchRepo = (repoPath: string, projectPath: string, options = defaultOptions) => {
+    const emitter = degit(repoPath, options)
     emitter.on('info', info => {
         console.log(info.message);
     });
-    emitter.clone('path/to/dest').then(() => {
+    emitter.clone(projectPath).then(() => {
         console.log('done');
     });
 }

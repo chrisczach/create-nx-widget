@@ -22,8 +22,11 @@ const cli = meow(
 			template: {
 				type: "string",
 			},
+			name: {
+				type: "string",
+			},
 		},
 	}
 );
 
-render(<App template={cli.flags.template} />);
+render(<App {...cli.flags}/>);

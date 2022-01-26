@@ -19,8 +19,14 @@ $ create-nx-widget --help
     $ create-nx-widget
 
   Options
+    --name Directory to create project
     --template  vue | vanilla | react | svelte
 
   Examples
+    $ create-nx-widget
+
     $ create-nx-widget --template=vue
+
+    $ create-nx-widget --template=vue --name=my-custom-widget
+
 ```
