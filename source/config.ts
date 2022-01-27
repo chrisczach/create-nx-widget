@@ -5,13 +5,15 @@ export enum Framework {
     vue = 'vue',
     vanilla = 'vanilla',
     react = 'react',
-    svelte = 'svelte'
+    svelte = 'svelte',
+    lit = 'lit'
 }
 export const templates: Record<Framework, string> = {
     vue: 'Vue',
     vanilla: 'Vanilla JavaScript',
     react: 'React',
-    svelte: 'Svelte'
+    svelte: 'Svelte',
+    lit: 'Lit Elements'
 }
 
 export const availableTemplates = Object.keys(templates).join(' | ')
