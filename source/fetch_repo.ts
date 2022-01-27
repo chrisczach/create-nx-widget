@@ -1,7 +1,7 @@
 import degit from 'degit'
 
 const defaultOptions = {
-    cache: true,
+    cache: false,
     force: true,
     verbose: true,
 }
