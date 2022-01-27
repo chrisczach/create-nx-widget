@@ -1,6 +1,6 @@
 {
 	"name": "create-nx-widget",
-	"version": "0.1.2",
+	"version": "0.1.4",
 	"license": "MIT",
 	"bin": "dist/cli.js",
 	"engines": {
@@ -13,7 +13,7 @@
 		"test": "xo && ava"
 	},
 	"files": [
-		"dist/cli.js"
+		"dist/"
 	],
 	"dependencies": {
 		"degit": "^2.8.4",
