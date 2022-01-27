@@ -6,7 +6,7 @@ import { GenerateFrameWork } from "./components/generate_template";
 import SelectInput from "ink-select-input";
 import TextInput from "ink-text-input";
 
-const App: FC<{ template?: string; name?: string }> = ({
+export const App: FC<{ template?: string; name?: string }> = ({
 	template: _template,
 	name: _name = "",
 }) => {
@@ -60,6 +60,3 @@ const App: FC<{ template?: string; name?: string }> = ({
 		</>
 	);
 };
-
-module.exports = App;
-export default App;
